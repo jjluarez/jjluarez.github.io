@@ -1,1 +1,2 @@
-# jjluarez.github.io
+Jax Juarez
+Illustrator/Animator 
