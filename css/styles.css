@@ -12,7 +12,9 @@ body {
     min-height: 100%;
 }
 
-*, *::before, *::after {
+*, 
+*::before,
+ *::after {
     box-sizing: inherit;
 }
 
@@ -101,11 +103,11 @@ video {
 
 .hero-nav .logo a,
 .hero-nav .nav-menu a {
-    color:  #C4AEFF;
+    color:  white;
 }
 
 .hero-nav .nav-menu a:hover {
-    border-bottom: 1px solid #AA92E7;
+    border-bottom: 1px solid white;
 }
 
 .hero-nav .nav-menu a {
@@ -118,11 +120,11 @@ video {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 0;
+    grid-gap: 0px;
     align-content: center;
     justify-content: center;
     align-items: start;
-    height:100px;
+    height: 100%;
 }
 
 .hero-image-box {
@@ -151,10 +153,10 @@ video {
 }
 
 .hero-video {
-    background-color: #C4AEFF;
+    background-color:#017DA2;
     background-image: url("../img.alan-titchmarsh-tips-growing-lavender-garden-578835.jpg");
-    background-repeat: no repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -199,6 +201,37 @@ video {
 
 .hero-button:active {
     background: #AA92E7; 
+}
+/* about page css */
+.about-page {
+    padding: 2rem 1rem 10rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.about-text {
+    margin: 0 auto;
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.about-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-social {
+display: flex;
+justify-content: start;
+}
+
+.about-social a {
+    color: white;
+    padding: 0 1rem 1rem 1rem; 
 }
 
 /* footer nav extra styles */
@@ -253,8 +286,23 @@ video {
         line-height: 2rem;
     }
 
+.about-page {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.about-text h1 {
+    font-size:3rem;
+    line-height: 3rem;
+}
+
+.about-text p {
+font-size: 1.1rem;
+line-height: 1.5rem;
+}
+
     .footer-nav {
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
 
     .footer-logo {
@@ -262,7 +310,7 @@ video {
     }
 }
 
-@media (min-width:920px){
+@media (min-width:920px) {
     body{
         max-width: 1400px;
     }
@@ -283,9 +331,19 @@ video {
         margin: 0 0 0 0.3rem;
         justify-self: start;
     }
-    .hero-nav{
+    .hero-nav {
         width: 100%;
     }
+    .about-text h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .about-text p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
     .footer-nav {
         justify-content: space-evenly;
     }
