@@ -230,7 +230,7 @@ justify-content: start;
 }
 
 .about-social a {
-    color: white;
+    color: black;
     padding: 0 1rem 1rem 1rem; 
 }
 
@@ -343,7 +343,7 @@ line-height: 1.5rem;
         font-size: 1.5rem;
         line-height: 2rem;
     }
-    
+
     .footer-nav {
         justify-content: space-evenly;
     }
